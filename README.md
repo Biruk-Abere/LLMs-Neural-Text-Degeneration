@@ -25,3 +25,5 @@ Self-BLEU calculated on the unconditional generations produced by stochastic dec
 
 ## Likelihood of Degeneration into Repetition
 ![Repetition](Results/Repetition.png)
+
+We visualize how often different decoding methods get “stuck” in loops within the first 200 tokens. A phrase (minimum length 2) is considered a repetition when it repeats at least three times at the end of the generation. We label points with their parameter values except for t and p which follow the x-axis. Values of k greater than 100 are rarely used in practice and values of p are usually in [0.9, 1); therefore Nucleus Sampling is far closer to the human distribution in its usual parameter range. Sampling with temperatures lower than 0.9 severely increase repetition. Finally, although beam search becomes less repetitive according to this metric as beam width increases, this is largely because average length gets shorter as b increases
