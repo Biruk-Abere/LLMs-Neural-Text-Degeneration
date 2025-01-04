@@ -2,6 +2,9 @@
 
 
 Reproducing Results from the Paper: "The Curious Case of Neural Text Degeneration". This is done for my LLMs class, I'll update the changes soon!
+*** 
+
+This paper explores the problem of neural text degeneration in language models. While these models can produce fluent text at first, they often suffer from issues like vocabulary distribution imbalances, repetition, and a gradual loss of coherence, leading to nonsensical or degraded outputs. To address this we propose Nucleus Sampling, a simple but effective method to draw considerably higher quality text out of neural language models than previous decoding strategies. Our approach avoids text degeneration by truncating the unreliable tail of the probability distribution, sampling from the dynamic nucleus of tokens containing the vast majority of the probability mass.
 
 ## Main Results
 ![Main Results](Results/Main_Results.png)
